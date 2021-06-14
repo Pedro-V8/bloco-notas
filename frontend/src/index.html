@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
+    <title>Document</title>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<body>
+
+    <div class="header">
+
+        <label id="name">MYNOTES</label>
+
+        <div id="header"></div>
+    </div>
+
+
+
+    <div id="option">
+        <img src="mais.png" id="imagem">
+    </div>
+    
+
+
+
+
+    <div class="bg-modal">
+        <div class="container">
+            <textarea class="title"></textarea>
+            <label for="story"></label>
+            <textarea class="story"></textarea>
+
+
+    
+            <button class="cancel">CANCELAR</button>
+            <button class="save">SALVAR</button>
+
+        </div>
+
+    </div>
+
+    <div class="lista">
+
+    </div>
+
+    <div class="bg-modal2">
+        <div class="container">
+            <textarea class="title2"></textarea>
+            <img src="trash.png" class="trash">
+            <label for="story"></label>
+            <textarea class="story2"></textarea>
+
+
+    
+            <button class="cancel">CANCELAR</button>
+            <button class="save2">SALVAR</button>
+
+        </div>
+
+    </div>
+
+
+
+
+
+    <script>
+        let botao = document.querySelector('#option').addEventListener('click' , () => {
+            document.querySelector('.bg-modal').style.display = 'flex'
+        })
+
+        document.querySelector('.cancel').addEventListener('click' , () => {
+            $('.title').empty();
+            $('.story').empty();
+            document.querySelector('.bg-modal').style.display = 'none'   
+        })
+
+
+        
+    </script>
+
+    <script src="./getTarefas.js"></script>
+    <script src="./setTarefas.js"></script>
+</body>
+</html>

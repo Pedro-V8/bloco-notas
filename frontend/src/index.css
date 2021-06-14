@@ -1,0 +1,252 @@
+body{
+    margin: 0px;
+    font: sans-serif;
+    text-rendering: optimizeLegibility;
+}
+
+
+
+#header{
+    margin-top: 10px;
+    border: 1px solid rgb(81, 229, 255);
+    outline: none;
+    display: flex;
+    font-family: sans-serif;
+}
+
+#name{
+    font-size: 3.5vw;
+    color: rgb(85, 88, 88);
+    margin-left: 39%;
+    font-family: sans-serif;
+}
+
+
+
+.input{
+    width: 100%;
+    display: block;
+    margin: 15px auto;
+}
+
+.title{
+    color:rgb(85, 88, 88);
+    height: 5vh;
+    width: 35vw;
+    border-radius: 10px;
+    outline: none;
+    margin-bottom: 35px;
+    border: 2px solid rgb(81, 229, 255);
+    font-size: 2em;
+}
+
+.title2{
+    color:rgb(85, 88, 88);
+    height: 5vh;
+    width: 35vw;
+    border-radius: 10px;
+    outline: none;
+    margin-bottom: 35px;
+    border: 2px solid rgb(81, 229, 255);
+    font-size: 2em;
+}
+
+.story {
+    color:rgb(85, 88, 88);
+    background: #fffefe;
+    border: 2px solid rgb(81, 229, 255);
+    height: 60vh;
+    width: 35vw;
+    border-radius: 10px;
+    outline: none;
+    font: sans-serif;
+    font-size: 1.5em;
+
+}
+
+.story2 {
+    color:rgb(85, 88, 88);
+    background: #fffefe;
+    border: 2px solid rgb(81, 229, 255);
+    height: 60vh;
+    width: 35vw;
+    border-radius: 10px;
+    outline: none;
+    font: sans-serif;
+    font-size: 1.5em;
+
+}
+
+#option{
+    height: 70px;
+    width: 70px;
+    margin-left: 700px;
+    border: 2px solid rgb(81, 229, 255);
+    border-radius: 999px;
+    cursor: pointer;
+}
+
+#option:hover{
+    height: 75px;
+    width: 75px;
+    border: 2px solid rgb(181, 192, 194);
+
+}
+
+#imagem{
+    height: 70px;
+    width: 70px;
+}
+
+#imagem:hover{
+    height: 75px;
+    width: 75px;
+}
+
+
+
+.cancel{
+    background-color: rgb(219, 222, 223);
+    font: sans-serif;
+    font-size: clamp(0.5em , 1.2vw, 3em);
+    color: rgb(85, 88, 88);
+    width: 11vw;
+    height: 5vh;
+    border-radius: 10px;
+    cursor: pointer;
+    border: 2px solid  rgb(219, 222, 223);
+    outline: none;
+    margin-top: 10px;
+    margin-right: 13.5vw;
+    white-space: nowrap;                  
+    overflow: hidden; /* "overflow" value must be different from "visible" */
+    text-overflow: ellipsis;
+
+}
+
+.save{
+    background-color: rgb(81, 229, 255);
+    font: sans-serif;
+    font-size: clamp(0.5em , 1.2vw, 3em);
+    color: rgb(85, 88, 88);
+    width: 11vw;
+    height: 5vh;
+    border-radius: 10px;
+    cursor: pointer;
+    border: 2px solid  rgb(81, 229, 255);
+    outline: none;
+}
+
+.cancel:hover{
+    background-color: rgb(210, 216, 216);
+    width: 11.2vw;
+    height: 5.2vh;
+
+}
+
+.save:hover{
+    background-color: rgb(0, 217, 255);
+    width: 11.2vw;
+    height: 5.2vh;
+}
+
+
+.save2{
+    background-color: rgb(81, 229, 255);
+    font: sans-serif;
+    font-size: clamp(0.5em , 1.2vw, 3em);
+    color: rgb(85, 88, 88);
+    width: 11vw;
+    height: 5vh;
+    border-radius: 10px;
+    cursor: pointer;
+    border: 2px solid  rgb(81, 229, 255);
+    outline: none;
+}
+
+.save2:hover{
+    background-color: rgb(0, 217, 255);
+    width: 11.2vw;
+    height: 5.2vh;
+}
+
+.noteList{
+    width: 17vw;
+    height: 13vh;
+    border: 2px solid rgb(81, 229, 255);
+    border-radius: 10px;
+    white-space: nowrap;                 
+    overflow: hidden; /* "overflow" value must be different from "visible" */
+    text-overflow: ellipsis;
+
+}
+
+
+.titleList{
+    width: 17vw;
+    height: 3vh;
+    border: 2px solid rgb(2, 97, 114);
+    border-radius: 10px;
+    white-space: nowrap;                  
+    overflow: hidden; /* "overflow" value must be different from "visible" */
+    text-overflow: ellipsis;
+}
+
+
+
+ul{
+    list-style:none;
+    position: relative;
+}
+
+.lista{
+    display: flex;
+    flex-flow: row wrap;
+    margin-right: -.25rem;
+    margin-left: -.25rem;
+    margin: 10px;
+    font-family: sans-serif; 
+    color: rgb(85, 88, 88);
+}
+
+.bg-modal{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0 , 0 , 0 , 0.7);
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+.bg-modal2{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0 , 0 , 0 , 0.7);
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+.trash{
+    height: 4vh;
+    cursor: pointer;
+
+}
+.container{
+    display: block;
+    width: 40vw;
+    height: 70vh;
+}
+
+.oloco{
+    display: block;
+    margin: 10px;
+    cursor: pointer;
+}
+
